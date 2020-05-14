@@ -31,7 +31,7 @@
 * [Feeds](https://community.rsa.com/docs/DOC-74431)
 * [Application Rules](https://community.rsa.com/docs/DOC-74192)
 ## NetWitness Investigator Client (Freeware)
-* [Investigator Client (Freeware)][https://community.rsa.com/community/products/netwitness/investigator]
+* [Investigator Client (Freeware)](https://community.rsa.com/community/products/netwitness/investigator)
 * [Investigator Client Download](https://go.rsa.com/l/797543/atorSetup-10-6-1-1-696-x64-msi/2whs3) - MD5(39a5fe58216876e2ca74983541f967df)
 * [Investigator Client User Guide](https://community.rsa.com/docs/DOC-110793)
 ## Integrations
