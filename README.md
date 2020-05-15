@@ -1,6 +1,7 @@
 # NetWitness
 # Useful Links
 * [RSA Community](https://community.rsa.com/)
+* [RSA Community NetWitness Blogs](https://community.rsa.com/community/products/netwitness/content?filterID=contentstatus%5Bpublished%5D~objecttype~objecttype%5Bblogpost%5D)
 ## Platform
 * [RSA NetWitness Platform 11.x Master Table of Contents](https://community.rsa.com/docs/DOC-81328)
 * [RSA NetWitness® Platform Online Documentation](https://community.rsa.com/community/products/netwitness/documentation)
