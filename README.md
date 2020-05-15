@@ -43,8 +43,9 @@
 * [Archer Integration](https://community.rsa.com/docs/DOC-80979)
 * [Endpoint (ECAT 4.4.X) Integration](https://community.rsa.com/docs/DOC-85003)
 * [Endpoint (ECAT 4.4.X) Alerts to a Log Decoder](https://community.rsa.com/docs/DOC-80980)
-## Misc
+## NwConsole
 * [NWConsole](https://community.rsa.com/docs/DOC-81632)
+* [Access NWConsole](https://community.rsa.com/docs/DOC-81092)
 ## Scripts for NetWitness
 * [Rest API to CSV](https://community.rsa.com/thread/169799)
 * [RSA NetWitness Storage Retention Script](https://community.rsa.com/community/products/netwitness/blog/2020/04/27/netwitness-storage-retention)
