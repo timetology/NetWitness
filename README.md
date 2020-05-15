@@ -13,11 +13,15 @@
 ## Network
 * [RSA NetWitness Network Hunting Guide](https://community.rsa.com/docs/DOC-62341)
 * [Decrypting Inbound SSL Traffic](https://community.rsa.com/docs/DOC-80216)
+* [Enable and Configure the Entropy Parser](https://community.rsa.com/docs/DOC-80197)
 ## Endpoint
 * [NetWitness Endpoint Agent Installation Guide for RSA NetWitness® Platform 11.4](https://community.rsa.com/docs/DOC-109919)
 * [NetWitness Endpoint Configuration Guide for RSA NetWitness® Platform 11.4](https://community.rsa.com/docs/DOC-109461)
 * [NetWitness Endpoint User Guide for RSA NetWitness® Platform 11.4](https://community.rsa.com/docs/DOC-109927)
-## NetWitness Logs
+## Logs
+## Investigate
+* [Investigate: Manage Meta Groups](https://community.rsa.com/docs/DOC-81071)
+* [Investigate: Troubleshooting](https://community.rsa.com/docs/DOC-86977)
 ## Event Stream Analysis (ESA)
 * [Automated Threat Detection](https://community.rsa.com/docs/DOC-80101)
 ## Reporting Engine
@@ -37,7 +41,8 @@
 ## Integrations
 * [Splunk Integration](https://community.rsa.com/docs/DOC-61797)
 * [Archer Integration](https://community.rsa.com/docs/DOC-80979)
-* [Endpoint(ECAT 4.4.X) Integration](https://community.rsa.com/docs/DOC-85003)
+* [Endpoint (ECAT 4.4.X) Integration](https://community.rsa.com/docs/DOC-85003)
+* [Endpoint (ECAT 4.4.X) Alerts to a Log Decoder](https://community.rsa.com/docs/DOC-80980)
 ## Misc
 * [NWConsole](https://community.rsa.com/docs/DOC-81632)
 ## Scripts for NetWitness
