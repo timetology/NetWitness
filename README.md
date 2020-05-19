@@ -15,6 +15,7 @@
 * [RSA NetWitness Network Hunting Guide](https://community.rsa.com/docs/DOC-62341)
 * [Decrypting Inbound SSL Traffic](https://community.rsa.com/docs/DOC-80216)
 * [Enable and Configure the Entropy Parser](https://community.rsa.com/docs/DOC-80197)
+* [Size Index Bucketing](https://community.rsa.com/community/products/netwitness/blog/2018/05/04/size-index-bucketing)
 ## Endpoint
 * [NetWitness Endpoint Agent Installation Guide for RSA NetWitness® Platform 11.4](https://community.rsa.com/docs/DOC-109919)
 * [NetWitness Endpoint Configuration Guide for RSA NetWitness® Platform 11.4](https://community.rsa.com/docs/DOC-109461)
