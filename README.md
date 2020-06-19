@@ -8,6 +8,8 @@
 * [RSA NetWitness® Platform 11.4 Product Documentation](https://community.rsa.com/community/products/netwitness/114)
 * [Upgrade Guide for RSA NetWitness® Platform 11.4](https://community.rsa.com/docs/DOC-109773)
 * [Deployment Guide: Network Architecture and Ports](https://community.rsa.com/docs/DOC-83050)
+## Admin Server
+* [NW 11.x Admin Server Services](https://community.rsa.com/docs/DOC-85595)
 ## Meta Data
 * [Unified Data Model](https://community.rsa.com/community/products/netwitness/rsa-content/udm)
 * [RSA NetWitness Investigation Meta](https://community.rsa.com/docs/DOC-107343)
