@@ -28,9 +28,9 @@
 * [Investigate: Troubleshooting](https://community.rsa.com/docs/DOC-86977)
 ## Event Stream Analysis (ESA)
 * [RSA Live ESA Rule Descriptions](https://community.rsa.com/docs/DOC-43401)
+* [Configurable RSA Live ESA Rules](https://community.rsa.com/docs/DOC-80005)
 * [Alerting with ESA Correlation Rules User Guide](https://community.rsa.com/docs/DOC-80068)
 * [ESA Rule Writing Best Practices](https://community.rsa.com/docs/DOC-104243)
-* [Configurable RSA Live ESA Rules](https://community.rsa.com/docs/DOC-80005)
 * [Automated Threat Detection](https://community.rsa.com/docs/DOC-80101)
 ## Reporting Engine
 * [Configure and Generate a Report](https://community.rsa.com/docs/DOC-80511)
