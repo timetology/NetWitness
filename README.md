@@ -47,6 +47,7 @@
 * [Investigator Client Download](https://go.rsa.com/l/797543/atorSetup-10-6-1-1-696-x64-msi/2whs3) - MD5(39a5fe58216876e2ca74983541f967df)
 * [Investigator Client User Guide](https://community.rsa.com/docs/DOC-110793)
 ## Integrations
+* [ELK Integration](https://community.rsa.com/community/products/netwitness/blog/2019/03/11/netwitness-packet-meta-in-elk)
 * [Splunk Integration](https://community.rsa.com/docs/DOC-61797)
 * [Archer Integration](https://community.rsa.com/docs/DOC-80979)
 * [Endpoint (ECAT 4.4.X) Integration](https://community.rsa.com/docs/DOC-85003)
