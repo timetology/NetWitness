@@ -24,6 +24,11 @@
 * [NetWitness Endpoint User Guide for RSA NetWitness® Platform 11.4](https://community.rsa.com/docs/DOC-109927)
 ## Logs
 ## Investigate
+* [Query](https://community.rsa.com/docs/DOC-81041)
+* [Filter Results in the Navigate View](https://community.rsa.com/docs/DOC-86981)
+* [Filter Results in the Events View](https://community.rsa.com/docs/DOC-86995)
+* [Filter Events Displayed in the Legacy Events View](https://community.rsa.com/docs/DOC-81063)
+* [Create a Query in the Navigate and Legacy Events Views](https://community.rsa.com/docs/DOC-81052)
 * [Investigate: Manage Meta Groups](https://community.rsa.com/docs/DOC-81071)
 * [Investigate: Troubleshooting](https://community.rsa.com/docs/DOC-86977)
 ## Event Stream Analysis (ESA)
