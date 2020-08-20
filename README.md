@@ -46,6 +46,7 @@
 * [Rebuilding the Index](https://community.rsa.com/docs/DOC-81111)
 * [Packet Parsers (Lua)](https://community.rsa.com/docs/DOC-41370)
 * [Feeds](https://community.rsa.com/docs/DOC-74431)
+* [Decoder Rules (Application Rules)](https://community.rsa.com/docs/DOC-80219)
 * [Application Rules](https://community.rsa.com/docs/DOC-74192)
 * [Query / Application Rule Cheatsheet](https://community.rsa.com/docs/DOC-99799)
 ## NetWitness Investigator Client (Freeware)
