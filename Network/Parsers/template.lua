@@ -14,13 +14,14 @@ Concentrator: index-concentrator-custom.xml
  	<key description="eoc" level="IndexValues" name="eoc" valueMax="1000" format="Text"/>
 --]]
 
--- Step 3 - Define meta keys to write meta into
+-- Step 2 - Define meta keys to write meta into
 -- declare the meta keys we'll be registering meta with
 template:setKeys({
 	nwlanguagekey.create("ioc", nwtypes.Text),
 	nwlanguagekey.create("boc", nwtypes.Text),
 	nwlanguagekey.create("eoc", nwtypes.Text),
 	nwlanguagekey.create("hostheader", nwtypes.Text),
+    nwlanguagekey.create("alias.host.len",nwtypes.UInt16)
 })
 
 -- Optional Step - Initialize State Tracking Variables on session begin
@@ -59,8 +60,15 @@ function template:tokenReadDataExample(token, first, last)
 	end
 end
 
--- Step 2 - Define tokens that get you close to what you want
--- declare what tokens and events we want to match.  
+function template:MetaCallback(index, host)
+	local hostLength = string.len(host)
+	if hostLength then
+		nw.createMeta(self.keys["alias.host.len"], hostLength)
+	end
+end
+
+-- Step 3 - Define tokens that get you close to what you want
+-- Declare what tokens and events we want to match.  
 -- These do not have to be exact matches but just get you close to the data you want.
 template:setCallbacks({
 	[nwevents.OnSessionBegin] = template.sessionBegin,
@@ -69,6 +77,7 @@ template:setCallbacks({
 	["Dyngate"] = template.EOC,
 --	["^Host: "] = template.tokenReadDataExample,
 --	["^host: "] = template.tokenReadDataExample,
+	[nwlanguagekey.create("alias.host")] = template.MetaCallback,
 })
 
 
