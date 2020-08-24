@@ -21,7 +21,7 @@ template:setKeys({
 	nwlanguagekey.create("boc", nwtypes.Text),
 	nwlanguagekey.create("eoc", nwtypes.Text),
 	nwlanguagekey.create("hostheader", nwtypes.Text),
-    nwlanguagekey.create("alias.host.len",nwtypes.UInt16)
+	nwlanguagekey.create("alias.host.len",nwtypes.UInt16)
 })
 
 -- Optional Step - Initialize State Tracking Variables on session begin
