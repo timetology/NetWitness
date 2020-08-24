@@ -77,6 +77,7 @@ template:setCallbacks({
 	["Dyngate"] = template.EOC,
 --	["^Host: "] = template.tokenReadDataExample,
 --	["^host: "] = template.tokenReadDataExample,
+--	["^HOST: "] = template.tokenReadDataExample,
 	[nwlanguagekey.create("alias.host")] = template.MetaCallback,
 })
 
