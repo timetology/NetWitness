@@ -16,6 +16,6 @@ end
 
 -- Step 3 - Define tokens that get you close to what you want
 wakeonlan:setCallbacks({
-	["\255\255\255\255\255\255"] = wakeonlan.IOC, -- "FF FF FF FF FF FF" in Hex
+	["^\255\255\255\255\255\255"] = wakeonlan.IOC, -- "FF FF FF FF FF FF" in Hex
 
 })
