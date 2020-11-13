@@ -1,4 +1,4 @@
---Identified the Magic Packet for Wake on Lan
+--Identifies the Magic Packet for Wake on Lan
 --https://en.wikipedia.org/wiki/Wake-on-LAN#Magic_packet
 
 -- Step 1 - Create parser
