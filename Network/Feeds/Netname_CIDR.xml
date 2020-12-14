@@ -1,0 +1,18 @@
+<FDF>
+	<FlatFileFeed name="Netnames_cidr" path="ir_0_netname_cidr.csv" separator="," comment="#">
+	<!-- Feed parser expects networks to be in the following format: CIDR_subnet,Description
+	
+	Feed parser requires the following Index keys to be added to  decoder-index.xml, concentrator-index.xml and investigator-index.xml
+	=Concentrator//Investigator=
+		<key description="Netname SRC" level="IndexValues" name="netname.src" valueMax="50000" format="Text" />
+		<key description="Netname DST" level="IndexValues" name="netname.dst" valueMax="50000" format="Text" />
+	-->
+		<LanguageKeys>
+			<LanguageKey name="netname" valuetype="Text" srcname="netname.src" destname="netname.dst"/>
+		</LanguageKeys>
+		<Fields>
+			<Field index="1" type="index" range="cidr"/>
+			<Field index="2" type ="value" key="netname"/>
+		</Fields>
+	</FlatFileFeed>
+</FDF>
