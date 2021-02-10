@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language level="IndexNone" defaultAction="Auto">
+	<!--
+	Custom Index Language Definition File
+	Core Database Tuning Guide: Index Customization
+	https://community.rsa.com/docs/DOC-81117
+	<language> root node which specifies any defaults found in key nodes
+		<key> child node of language which can have the following attributes:
+			name = Name of the key (max is 16 chars)
+			description = Description of the key (max is 256 bytes, strings encoded as UTF-8)
+			format = Type format of the value which can be:
+				Int8, UInt8, Int16, UInt16, Int32, UInt32, Int64, UInt64, UInt128
+				Float32, Float64, TimeT, Binary, Text, IPv4, IPv6, MAC
+			level = The index level for the key.  If not defined, it will be set to IndexNone.
+				IndexNone   - Default index level which provides no indexing
+				IndexKeys   - Provide indexing at the key level (e.g., identify which sessions have values, but do not track
+					          the actual values.  This provides highly efficient exists or !exists queries, but slower
+							  queries for other operators like: key = 'some value'
+				IndexValues - Highest indexing level.  Provides the best performance for all query operators but also takes
+				              the most time to index and requires the most storage space.
+			valueMax = Maximum number of unique values allowed per index slice (typically 1 to 4 slices are created per day).
+			           Zero means unbounded.  Only applicable to level="IndexValues"
+			defaultAction = Default investigation action for each report: Open, Closed, Auto, Hidden
+			protected = A flag indicating to downstream components that the appropriate access, persistence, retention, and
+						propagation policies must be applied to meta values received of this key type:
+				true 	- The key will have the protected flag set
+				false	- default behavior, equivalent to not specifying the protected attribute
+			transient = Indicates that any meta values created for this key during content parsing should not be
+						persisted and will not be visible to any downstream/client services:
+				true 	- The above behavior is enabled (decoder/logdecoder only)
+				false	- default behavior, equivalent to not specifying the transient attribute
+			token = An informational flag indicating that values for this key are stand-ins for another value and may not be
+					visually interesting, primarily for UI elements to display the value in a more useful or visually
+					pleasing format:
+				true 	- The key will have the token flag set
+				false	- default behavior, equivalent to not specifying the token attribute
+			<value> Sub element of key which specifies overrides at the value level:
+				name = Specific value for the override
+				action = keep|filter
+				
+			<aliases> - Sub element of <key> for providing human readable aliases for parsed meta values
+				<alias format="$value $alias or just $alias" value="a value">alias string</alias>
+			</aliases>
+			<transform> This child element of key indicates that any values of this key type created during content parsing
+						(decoder/logdecoder) will be transformed and the resulting value persisted in another key,
+						informational when specified on other services
+				destination = specifies the key name of the transformed meta value to create
+	Decoder examples - Normally you do not need to edit index files on the Decoder, unless you want to add
+	aliases or have data privacy requirements.  Parsers and feeds declare their meta keys internally and those keys
+	are automatically added to the language.  Also, you should *never* set the index level to IndexKeys or IndexValues
+	on a Decoder if you have a Concentrator/Archiver aggregating from it.  The index partition size is too small to
+	support any indexing beyond the default "time" meta.
+		Data privacy
+		<key description="existing meta key" format="Text" level="IndexNone" name="existing" protected="true">
+			<transform destination="existing.hash"/>
+		</key>
+	Concentrator/Archiver examples - Any new meta keys that should be indexed must be added to this file.
+		Adding new meta key for custom parser at the index key level
+		<key description="my new parser meta key" format="Text" level="IndexKey" name="mynewparserkey"/>
+		Data privacy
+		<key description="existing meta key" format="Text" level="IndexValues" name="existing" protected="true">
+			<transform destination="existing.hash"/>
+		</key>
+		<key description="existing meta key hash" format="Text" level="IndexValues" name="existing.hash" token="true"/>
+	Broker derives its language from all the devices it aggregates from.  There is simply no need to edit a broker's
+	custom language file.
+	-->
+	
+	<!-- *** Please insert your custom keys or modifications below this line *** -->
+<!-- Concentrator / Investigator Custom Meta Keys -->
+
+<!-- Netname -->
+<!-- <key description="Source NetName" format="Text" level="IndexValues" name="netname.src" valueMax="10000" defaultAction="Closed"/> -->
+<!-- <key description="Destination NetName" format="Text" level="IndexValues" name="netname.dst" valueMax="10000" defaultAction="Closed"/> -->
+
+<!-- Override Default Index Levels -->
+<key description="Session Streams" level="IndexValues" name="streams" format="UInt8" singleton="true" valueMax="10" defaultAction="Closed"/>   
+<key description="Session Split Count" level="IndexKeys" name="session.split" format="UInt16" defaultAction="Closed"/> 
+<key description="SSL CA" level="IndexValues" name="ssl.ca" format="Text" valueMax="500000" defaultAction="Closed"/>
+<key description="SSL Subject" level="IndexValues" name="ssl.subject" format="Text" valueMax="1000000" defaultAction="Closed"/>
+<key description="TCP Flags" level="IndexValues" name="tcpflags" format="Text" valueMax="100" defaultAction="Closed"/>
+<key description="Second Level Domain" level="IndexValues" name="sld" format="Text" valueMax="5000000" defaultAction="Closed"/>
+<key description="DNS Request Type" level="IndexValues" name="dns.querytype" format="Text" valueMax="1000" defaultAction="Closed"/>
+<key description="DNS Response Type" level="IndexValues" name="dns.responsetype" format="Text" valueMax="1000" defaultAction="Closed"/>
+<key description="DNS Response Text" level="IndexKeys" name="dns.resptext" format="Text" defaultAction="Closed"/>
+	
+<!-- Override City Index level to IndexKeys -->
+<key description="Source City" level="IndexKeys" name="city.src" format="Text" defaultAction="Closed"/>
+<key description="Destination City" level="IndexKeys" name="city.dst" format="Text" defaultAction="Closed"/>
+</language>
