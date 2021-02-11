@@ -42,7 +42,8 @@
 * [Report Rule Syntax](https://community.rsa.com/docs/DOC-80518)
 ## Content
 * [Meta Key Creation / Customization](https://community.rsa.com/docs/DOC-81117)
-* [Custom Meta Key Creation (See index-concentrator-custom.xml)](https://community.rsa.com/docs/DOC-80195) 
+* [Custom Meta Key Creation (See index-concentrator-custom.xml)](https://community.rsa.com/docs/DOC-80195)
+* [Meta info - Business Context Feed](https://community.rsa.com/community/products/netwitness/blog/2020/09/25/business-context-feed-taxonomy)
 * [Rebuilding the Index](https://community.rsa.com/docs/DOC-81111)
 * [Packet Parsers (Lua)](https://community.rsa.com/docs/DOC-41370)
 * [Feeds](https://community.rsa.com/docs/DOC-74431)
@@ -65,3 +66,5 @@
 ## Scripts for NetWitness
 * [Rest API to CSV](https://community.rsa.com/thread/169799)
 * [RSA NetWitness Storage Retention Script](https://community.rsa.com/community/products/netwitness/blog/2020/04/27/netwitness-storage-retention)
+* [NetWitness Retention Script:  Understanding The Numbers](https://community.rsa.com/community/products/netwitness/blog/2021/01/20/netwitness-retention-script-interpreting-the-numbers)
+* [Centralized Backup & Restore of NetWitness Version 11.2+](https://community.rsa.com/docs/DOC-106140)
