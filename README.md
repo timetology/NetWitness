@@ -68,3 +68,9 @@
 * [RSA NetWitness Storage Retention Script](https://community.rsa.com/community/products/netwitness/blog/2020/04/27/netwitness-storage-retention)
 * [NetWitness Retention Script:  Understanding The Numbers](https://community.rsa.com/community/products/netwitness/blog/2021/01/20/netwitness-retention-script-interpreting-the-numbers)
 * [Centralized Backup & Restore of NetWitness Version 11.2+](https://community.rsa.com/docs/DOC-106140)
+## Check Service status Centos 7
+```
+systemctl list-unit-file | grep -i nw
+systemctl status nwconcentrator
+systemctl status nwdecoder
+```
